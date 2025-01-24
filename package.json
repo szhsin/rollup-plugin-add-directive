@@ -1,0 +1,18 @@
+{
+  "name": "rollup-plugin-add-directive",
+  "version": "0.1.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Zheng Song",
+  "license": "MIT",
+  "description": "",
+  "devDependencies": {
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "@types/micromatch": "^4.0.9",
+    "micromatch": "^4.0.8"
+  }
+}
