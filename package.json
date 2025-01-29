@@ -2,14 +2,24 @@
   "name": "rollup-plugin-add-directive",
   "version": "0.1.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
+    "start": "tsc --watch",
+    "lint": "eslint .",
+    "pret": "prettier -c .",
+    "pret:fix": "prettier -w .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Zheng Song",
   "license": "MIT",
   "description": "",
   "devDependencies": {
-    "typescript": "^5.7.3"
+    "eslint": "^9.19.0",
+    "eslint-config-prettier": "^10.0.1",
+    "prettier": "^3.4.2",
+    "rollup": "^4.32.0",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.22.0"
   },
   "dependencies": {
     "@types/micromatch": "^4.0.9",
