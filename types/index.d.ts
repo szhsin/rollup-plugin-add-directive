@@ -1,9 +1,9 @@
 import { Plugin } from 'rollup';
 import { Options } from 'micromatch';
 export interface PluginOptions {
+    directive?: string;
     pattern?: string | readonly string[];
     options?: Options;
-    directive?: string;
 }
-declare const addDirective: ({ pattern, options, directive }?: PluginOptions) => Plugin;
+declare const addDirective: ({ directive, pattern, options }?: PluginOptions) => Plugin;
 export { addDirective };

@@ -2,15 +2,15 @@ import { Plugin } from 'rollup';
 import mm, { Options } from 'micromatch';
 
 export interface PluginOptions {
+  directive?: string;
   pattern?: string | readonly string[];
   options?: Options;
-  directive?: string;
 }
 
 const addDirective = ({
+  directive = "'use client';",
   pattern = '**/*',
-  options,
-  directive = "'use client';"
+  options
 }: PluginOptions = {}): Plugin => {
   return {
     name: 'rollup-plugin-add-directive',

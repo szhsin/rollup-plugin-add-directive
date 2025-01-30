@@ -1,5 +1,5 @@
 import mm from 'micromatch';
-const addDirective = ({ pattern = '**/*', options, directive = "'use client';" } = {}) => {
+const addDirective = ({ directive = "'use client';", pattern = '**/*', options } = {}) => {
     return {
         name: 'rollup-plugin-add-directive',
         banner: ({ name }) => (mm.isMatch(name, pattern, options) ? directive : '')
