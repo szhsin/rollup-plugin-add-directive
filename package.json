@@ -17,6 +17,8 @@
     "lint": "eslint .",
     "pret": "prettier -c .",
     "pret:fix": "prettier -w .",
+    "clean": "rm -Rf dist/ types/",
+    "build": "npm run pret && npm run lint && npm run clean && tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
