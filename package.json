@@ -19,15 +19,17 @@
     "pret:fix": "prettier -w .",
     "clean": "rm -Rf dist/ types/",
     "build": "npm run pret && npm run lint && npm run clean && tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "vitest --coverage"
   },
   "devDependencies": {
+    "@vitest/coverage-v8": "^3.0.4",
     "eslint": "^9.19.0",
     "eslint-config-prettier": "^10.0.1",
     "prettier": "^3.4.2",
     "rollup": "^4.32.0",
     "typescript": "^5.7.3",
-    "typescript-eslint": "^8.22.0"
+    "typescript-eslint": "^8.22.0",
+    "vitest": "^3.0.4"
   },
   "dependencies": {
     "@types/micromatch": "^4.0.9",
