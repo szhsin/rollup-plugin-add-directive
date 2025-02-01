@@ -1,16 +1,26 @@
 {
   "name": "rollup-plugin-add-directive",
-  "version": "0.2.0",
+  "version": "1.0.0",
+  "description": "Automatically add directives based on glob matching",
   "author": "Zheng Song",
   "license": "MIT",
-  "description": "",
-  "main": "./dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/szhsin/rollup-plugin-add-directive.git"
+  },
   "type": "module",
+  "main": "./dist/index.js",
   "types": "./types/index.d.ts",
   "sideEffects": false,
   "files": [
     "dist/",
     "types/"
+  ],
+  "keywords": [
+    "rollup",
+    "plugin",
+    "directive",
+    "use client"
   ],
   "scripts": {
     "start": "tsc --watch",
