@@ -9,12 +9,14 @@ export interface PluginOptions {
 
 const addDirective = ({
   directive = "'use client';",
-  pattern = '**/*',
+  pattern,
   options
 }: PluginOptions = {}): Plugin => {
   return {
     name: 'rollup-plugin-add-directive',
-    banner: ({ name }) => (mm.isMatch(name, pattern, options) ? directive : '')
+    banner: pattern
+      ? ({ name }) => (mm.isMatch(name, pattern, options) ? directive : '')
+      : directive
   };
 };
 
